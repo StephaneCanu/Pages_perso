@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Understanding SVM</title>
+</head>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36412217-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" vlink="#808f84">
+
+<br>
+
+<center>
+<font face="Arial, Helvetica">
+<font size="+3">
+Understanding SVM (and associated kernel machines)<br>
+through the development of a Matlab toolbox
+</font>
+<br>
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/", target="_top">St&eacute;phane Canu
+</a><br>
+<br>
+Lectures given at the Institute of Mathematics and Statistics, University
+of Sao Paulo, feb 2014<br>
+<a href="http://paca.ime.usp.br/course/view.php?id=776">Moodle site of
+the lecture at IME-USP thanks to Pr. R. Hirata Jr</a> <br>
+<br>
+<img src="Cours_SVM/La_Classe_SVM_Fev_2014_USP_IME_moyen.jpg" alt="SVM
+at IME USP, february 2014" width="400">
+</center>
+
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Sylabus_Lecture_Sao_Paulo_2014.pdf">
+Sylabus (pdf)
+</a>
+
+<br>
+ The Objective of this course is to provide an overview of all these issues related with kernels machines.
+To do so, we will introduce kernel machines and  associated mathematical foundations through practical implementation.
+All  lectures will be devoted to the writing of some Matlab functions that, putting all together, will provide a toolbox for learning with kernels.<br>
+
+<br>
+<HR>
+<br>
+Lecture 1: Two classes classification problem: Introduction to Support Vector Machines (SVM), Linear SVM in the primal as a quadratic program and LPSVM for variable selection.
+
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture1_Linear_SVM_Primal.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP1_Linear_SVM_Primal.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec1_Linear_SVM_Primal.m">My
+solution as a matlab file</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/data1.mat">Data (.mat)</a>
+
+<br>
+<br>
+Lecture 2: Karush-Kuhn-Tucker (KKT) optimality conditions, lagrangian duality, Linear SVM in the dual, support vectors
+
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture2_Linear_SVM_Dual.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP2_Linear_SVM_Dual.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec2_Linear_SVM_Dual.m">My
+solution as a matlab file</a>
+&nbsp;&nbsp;<!a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/ "><!Data</a>
+
+<br>
+<br>
+Lecture 3: Linear SVM in the non separable case, reformulations: convex hulls and regularized hinge loss minimization. Libsvm and other QP solver
+
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture3_Linear_SVM_with_Slack.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP3_C_SVM_Linear.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec3_L1_SVM_Lin.m">My
+solution as a matlab file</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/data3.mat">Data (.mat)</a>
+
+<br>
+<br>
+Lecture 4: Positive definite kernels, associated RKHS, differentiability, subdifferentiablility and other kernels
+
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture4_Kenrels_Functions_RKHS.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP4_Kernels.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec4_Kernel.m">My
+solution as a matlab file</a>
+&nbsp;&nbsp;<!a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/ "><!Data</a>
+
+<br>
+<br>
+Lecture 5: SVM in a reproducing kernel Hilbert spaces (RKHS), representer theorem and other kernel machines (splines and kernel logistic regression)
+
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture5_Kernel_SVM.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP5_SVM_Kernel.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec5_L1_SVM_Checkers.m">My
+solution as a matlab file</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/data5Checkers.mat">Checker
+data (.mat)</a>
+
+<br>
+<br>
+Lecture 6: Novelty detection, Support Vector Data Description (SVDD), One Class SVM, minimum enclosing balls and level sets
+
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture6_SVDD.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP6_SVDD.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec6_SVDD.m">My
+solution as a matlab file,</a>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec6_SVDD_2_CLASSES.m">An
+other solution for 2 class SVDD as a matlab file</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Data6OneClass.mat">Data
+(.mat)</a>
+
+<br>
+<br>
+Lecture 7: Tuning the hyperparamters, C, the bandwidth and the KKT gap
+
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture7_Cross_Validation.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP7_Cross_Validation.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec7_SVM_CV_Splice.m">My
+solution as a matlab file</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Data7Splices.mat">Splice
+data
+(.mat)</a>
+
+<br>
+<br>
+Lecture 8: MultiClass SVM, estimating the posterior probabilities and structured output
+
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture8_Multi_Class_SVM.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP8_Multi_Class_SVM.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec8_MultiClass_No_Noise_SVM.m">My
+solution as a matlab file</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Data8MultiCLass.mat">Data
+(.mat)</a>
+
+<br>
+<br>
+Lecture 9: How to choose the kernel, multiple kernel learning
+
+<br>
+<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture9_Multi_Kernel_SVM.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP9_Multiple_Kernel_Learning.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec9_My_MKL.m">My
+solution as a matlab file</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Data9mixture.mat">Data
+(.mat)</a>
+
+<br>
+<br>
+Lectrure 10: L0 SVDD, <! Regularization path for SVM, sub differential and DrSVM (Elastic net SVM) >
+
+<br>
+<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lecture10_Outilier_L0_SVDD.pdf">Slides (pdf)</a>
+&nbsp;&nbsp;<a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/TP10_Outlier_L0_SVDD.pdf">Practical Session (pdf)</a>
+&nbsp;&nbsp;<a
+href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/Lec10_L0_SVDD_Oulier_detection.m">My
+solution as a matlab file</a>
+&nbsp;&nbsp;<!a href="http://asi.insa-rouen.fr/%7Escanu/Cours_SVM/ "><!Data</a>
+<br>
+<br>
+
+<HR>
+
+<br>
+
+Matlab toolbox and other usefull software resources:
+<ul>
+  <li> <a href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/">libsvm: A Library for Support Vector Machines</a></li>
+  <li> <a href="http://stanford.edu/~boyd/cvx/3">CVX: Matlab software for disciplined convex programming</a></li>
+  <li> <a
+  href="http://asi.insa-rouen.fr/enseignants/~arakoto/toolbox/">SVM
+  KM: SVM and Kernel Methods Matlab Toolbox</a></li>
+  <li> <a href="http://mloss.org/software/">MLOSS: Machine Learning Open Source Software</a></li>
+</ul>
+
+<br>
+
+<a href="http://asi.insa-rouen.fr/enseignants/~scanu/SVM/">A lecture
+on SVM in french</a>
+<br>
+
+</font>
+
+<font size="-1">
+<A HREF="#top" ALIGN="left"><IMG SRC="4arrow1.gif" BORDER=0  ALIGN=RIGHT></A>&nbsp;
+<HR>Derni&egrave;re mise &agrave; jour : 21 Mai 2014,
+<ADDRESS>
+<A HREF="http://asi.insa-rouen.fr/~scanu">St&eacute;phane Canu </A>(<A HREF="mailto:scanu@insa-rouen.fr">
+scanu@insa-rouen.fr</A>)</ADDRESS>
+</font>
+
+</body>
+</html>
