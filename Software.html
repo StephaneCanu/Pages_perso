@@ -1,39 +1,95 @@
-<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-  <meta http-equiv="Content-Type"
- content="text/html; charset=iso-8859-1">
-  <meta http-equiv="CONTENT-TYPE"
- content="text/html; charset=iso-8859-1">
-  <meta name="GENERATOR"
- content="Mozilla/4.7 [fr] (Win98; I) [Netscape]">
-  <meta name="CREATED" content="20010215;14430100">
-  <meta name="CHANGED" content="20010305;16214100">
-  <title>St&eacute;phane Canu, Enseignements </title>
-  <style>
-	<!--
-		.style1 {font-family: Arial, Helvetica, sans-serif}
-		ADDRESS { color: #000000 }
-		TD P { color: #000000 }
-		P { color: #000000 }
-		A:visited { color: #808f84 }
-	-->
-	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logiciels · Stéphane Canu</title>
+  <meta name="description" content="Logiciels de Stéphane Canu : boîtes à outils Matlab pour les SVM et les méthodes à noyaux, dépôts GitHub de cours et de compétitions.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"
- vlink="#808f84"; font-family: Arial, Helvetica, sans-serif>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
 
-<table>
-<p class="style1"><u><font size="+2">Software</font></u> 
-<ul>
-<ul>
-<div style="margin-bottom: 0cm;"> <a href="http://www.mloss.org/software/", target="_blank"> MLOSS </a> </div><br>
-<div style="margin-bottom: 0cm;"> <a href="http://www.mloss.org/software/view/33/", target="_blank">Boite &agrave; outil Matlab pour les SVM avec un solveur de type "contraintes actives"  </a> </div>
-<div style="margin-bottom: 0cm;"> <a href="http://www.mloss.org/software/view/26/", target="_blank"> SimpleSVM (Matlab) </a> </div>
-<div style="margin-bottom: 0cm;"> <a href="http://www.mloss.org/software/view/82/", target="_blank">  Simple MKL (Matlab)  </a> </div>
-<div style="margin-bottom: 0cm;"> <a href="http://www.mloss.org/software/view/319/", target="_blank"> Labels incertains (Matlab) </a>  </div>
-</ul>
-</ul>
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="index.html">Stéphane Canu</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="Projets.html">Recherche</a>
+        <a href="Publications.html">Publications</a>
+        <a href="Presentation.html">Présentations</a>
+        <a href="Enseignement.html">Enseignement</a>
+        <a href="Software.html" aria-current="page">Logiciels</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main id="contenu">
+    <h1 class="page-title">Logiciels</h1>
+    <p class="lead">Boîtes à outils pour les SVM et les méthodes à noyaux, et dépôts de cours et de compétitions.</p>
+
+    <section aria-labelledby="matlab">
+      <h2 id="matlab">Boîtes à outils Matlab</h2>
+      <!-- Les pages MLOSS passent par le miroir statique de la TU Berlin (mloss.org ne répondait plus lors de la migration). -->
+      <ul class="courses">
+        <li class="course">
+          <div class="course-head"><h3>SVM and Kernel Methods Toolbox</h3><span class="level">Matlab</span></div>
+          <p>Boîte à outils Matlab pour les SVM, avec un solveur de type « contraintes actives ».</p>
+          <p class="chips"><a class="chip" href="https://mloss-static.ml.tu-berlin.de/software/view/33/" target="_blank" rel="noopener">Page MLOSS</a></p>
+        </li>
+        <li class="course">
+          <div class="course-head"><h3>SimpleSVM</h3><span class="level">Matlab</span></div>
+          <p>Implémentation Matlab de SimpleSVM.</p>
+          <p class="chips"><a class="chip" href="https://mloss-static.ml.tu-berlin.de/software/view/26/" target="_blank" rel="noopener">Page MLOSS</a></p>
+        </li>
+        <li class="course">
+          <div class="course-head"><h3>SimpleMKL</h3><span class="level">Matlab</span></div>
+          <p>Apprentissage multi-noyaux (<em>multiple kernel learning</em>) en Matlab.</p>
+          <p class="chips"><a class="chip" href="https://mloss-static.ml.tu-berlin.de/software/view/82/" target="_blank" rel="noopener">Page MLOSS</a> <a class="chip" href="https://jmlr.org/papers/v9/rakotomamonjy08a.html" target="_blank" rel="noopener">Article (JMLR 2008)</a></p>
+        </li>
+        <li class="course">
+          <div class="course-head"><h3>SVM with uncertain labels</h3><span class="level">Matlab</span></div>
+          <p>SVM avec labels incertains, en Matlab.</p>
+          <p class="chips"><a class="chip" href="https://mloss-static.ml.tu-berlin.de/software/view/319/" target="_blank" rel="noopener">Page MLOSS</a></p>
+        </li>
+      </ul>
+      <p class="muted">Autres logiciels libres d’apprentissage automatique : <a href="https://mloss-static.ml.tu-berlin.de/software/author/stephane-canu.html" target="_blank" rel="noopener">mes projets sur MLOSS</a>.</p>
+    </section>
+
+    <section aria-labelledby="github">
+      <h2 id="github">Sur GitHub</h2>
+      <ul class="courses">
+        <li class="course">
+          <div class="course-head"><h3>Deep_learning_lecture</h3><span class="level">Jupyter</span></div>
+          <p>Deep learning : une perspective historique, avec diapositives, code Python et notebooks.</p>
+          <p class="chips"><a class="chip" href="https://github.com/StephaneCanu/Deep_learning_lecture" target="_blank" rel="noopener">Dépôt</a></p>
+        </li>
+        <li class="course">
+          <div class="course-head"><h3>Introduction_to_AI</h3></div>
+          <p>Introduction à l’IA : séance pratique sur le deep learning, pour l’école d’été sur l’intelligence artificielle de l’INSA Rouen Normandie.</p>
+          <p class="chips"><a class="chip" href="https://github.com/StephaneCanu/Introduction_to_AI" target="_blank" rel="noopener">Dépôt</a></p>
+        </li>
+        <li class="course">
+          <div class="course-head"><h3>covid_AI_resources</h3><span class="level">Jupyter</span></div>
+          <p>Site compagnon de « Un panorama des recherches contre le Covid-19 dans le domaine des sciences et technologies de l’information », présenté avec Jamal Atif et Olivier Cappé à la journée d’étude Covid-19 du GDR ISIS (16 avril 2020).</p>
+          <p class="chips"><a class="chip" href="https://github.com/StephaneCanu/covid_AI_resources" target="_blank" rel="noopener">Dépôt</a></p>
+        </li>
+        <li class="course">
+          <div class="course-head"><h3>CAp2018_Competition</h3><span class="level">Jupyter</span></div>
+          <p>Leçons de la compétition de CAp 2018 « My Tailor is rich! » : prédire le niveau d’anglais d’un apprenant à partir de ses textes. Code d’évaluation (R, Python, Matlab) et kit de démarrage.</p>
+          <p class="chips"><a class="chip" href="https://github.com/StephaneCanu/CAp2018_Competition" target="_blank" rel="noopener">Dépôt</a></p>
+        </li>
+      </ul>
+      <p class="muted"><a href="https://github.com/StephaneCanu?tab=repositories" target="_blank" rel="noopener">Tous mes dépôts GitHub</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="bar">
+      <span>© Stéphane Canu</span>
+      <span>Prototype · page Logiciels · octobre 2026</span>
+    </div>
+  </footer>
 </body>
 </html>
